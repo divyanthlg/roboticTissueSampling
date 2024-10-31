@@ -47,10 +47,10 @@
           <h1 class="title is-1 publication-title">Outdoor Autonomous Pepper Harvesting: Imitation Learning in Unstructured Agricultural Environments</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://chjohnkim.github.io/">Chung Hee Kim</a></sup>
+              <a href="https://chjohnkim.github.io/">Chung Hee Kim</a></sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.ri.cmu.edu/ri-faculty/abhisesh-silwal/">Abhisesh Silwal</a></sup>
+              <a href="https://www.ri.cmu.edu/ri-faculty/abhisesh-silwal/">Abhisesh Silwal</a></sup>,
             </span>
             <span class="author-block">
               <a href="https://www.ri.cmu.edu/ri-faculty/george-a-kantor/">George Kantor</a></sup>
@@ -66,7 +66,7 @@
             <div class="publication-links">
               <!-- PDF Link. --> 
               <span class="link-block">
-                  <a href="https://arxiv.org/abs/2311.07479"
+                  <a href="https://kantor-lab.github.io/roboharvest/"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -74,20 +74,9 @@
                     <span>Paper</span>
                   </a>
                 </span>
-              <!--
-              <span class="link-block">
-                <a href="https://kantor-lab.github.io/roboharvest/"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv (Coming Soon)</span>
-                </a>
-              </span>
-              -->
               <!-- Video Link. -->
               <span class="link-block">
-                <a href="https://youtu.be/FGtdYFe0W9A"
+                <a href="https://kantor-lab.github.io/roboharvest/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
@@ -97,7 +86,7 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/chjohnkim/tree_gnn.git"
+                <a href="https://kantor-lab.github.io/roboharvest/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -106,19 +95,15 @@
                   </a>
               </span>
               <!-- Dataset Link. -->
-              <!--
               <span class="link-block">
-                <a href="https://labs.ri.cmu.edu/kantorlab/data-sets/"
+                <a href="https://kantor-lab.github.io/roboharvest/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
                   <span>Data</span>
                   </a>
-              -->
             </div>
-
-          
         </div>
       </div>
     </div>
@@ -162,33 +147,31 @@
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <!--h2 class="title is-3">Abstract</h2-->
         <div class="content has-text-justified">
           <p>
-
-            There is growing interest in automating agricultural
-            tasks that require intricate and precise interaction with
-            specialty crops, such as trees and vines. However, developing
-            robotic solutions for crop manipulation remains a difficult
-            challenge due to complexities involved in modeling their deformable
-            behavior. In this study, we present a framework for
-            learning the deformation behavior of tree-like crops under
-            contact interaction. Our proposed method involves encoding the
-            state of a spring-damper modeled tree crop as a graph. This
-            representation allows us to employ graph networks to learn both
-            a forward model for predicting resulting deformations, and a
-            contact policy for inferring actions to manipulate tree crops.
-            We conduct a comprehensive set of experiments in a simulated
-            environment and demonstrate generalizability of our method
-            on previously unseen trees.
+            Automating tasks in outdoor agricultural fields
+            poses significant challenges due to environmental variability,
+            unstructured terrain, and diverse crop characteristics. We
+            present a robotic system for autonomous pepper harvesting
+            designed to operate in these unprotected, complex settings.
+            Utilizing a custom handheld shear-gripper, we collected 300
+            demonstrations to train a visuomotor policy, enabling the
+            system to adapt to varying field conditions and crop diversity.
+            Achieving a success rate of 28.95% with a cycle time of
+            31.71 seconds, our system demonstrates the feasibility and
+            effectiveness of leveraging imitation learning for automated
+            harvesting in unstructured agricultural environments. This
+            work aims to advance scalable, automated robotic solutions
+            for agriculture in natural settings.
           </p>
         </div>
         <img src="./static/images/titile_motivation.jpg"
         class="interpolation-image"
-        alt="Interpolate start reference image."/>
+        alt=" "/>
     
         <h2 class="subtitle has-text-centered">
-          <span class="dnerf"> Agricultural tasks such as harvesting, pruning, and inspection, often involve contact interactions with crops. 
+          <span class="dnerf"> Some text here... 
         </h2>
     
       </div>
@@ -212,84 +195,60 @@
 
 <section class="section">
   <div class="container is-max-desktop">
+    <!-- Robot  -->
+    <div class="content">
+      <h2 class="title is-3">Our Robot</h2>
+      <p>
+        Some text here... 
+      </p>
+      <div style="text-align: center;">
+        <img src="./static/images/input_output.jpg" width="500"
+            class="interpolation-image"
+            alt=" "/>
+      </div>         
+    </div>
 
-
-      <!-- Graph Representation  -->
-        <div class="content">
-          <h2 class="title is-3">Graph Representation for Trees</h2>
-          <p>
-            Tree structures can be represented as graphs to train the forward model and the contact policy. 
-          </p>
-          <p>
-            <strong>Forward Model:</strong> Given an initial tree state and an applied action, the forward model predicts how the resulting tree has deformed by outputting per node differences. 
-          </p>
-
-          <p>
-            <strong>Contact Policy:</strong> Given an initial tree state and target tree state, the contact policy predicts where and how to interact with the tree by outputting per node trajectory and per node affordance. 
-          </p>
-          <div style="text-align: center;">
-            <img src="./static/images/input_output.jpg" width="500"
-               class="interpolation-image"
-               alt="GNN Input Output"/>
-          </div>
-         
-        </div>
-      <!--/ Graph Representation  -->
-
-  
-
-      <!-- Graph Representation  -->
-        <div class="content">
-          <h2 class="title is-3">Graph Neural Network Architecture</h2>
-          <p>
-            Our GNN model architecture utilizes stackable <a href="https://arxiv.org/abs/1806.01242">graph2graph</a> layers, placed between input embedding layers and output prediction heads. The
-            model takes as input a graph and outputs per-node predictions. Different output heads are used for the forward model and the contact policy
-          </p>
-
-          
-          <img src="./static/images/model_architecture.svg"
-          class="interpolation-image"
-          alt="Model Architecture"/>
-          
-        </div>
-
-      <!--/ Graph Representation  -->
-      
-
+    <!-- Handheld Device  -->
+    <div class="content">
+      <h2 class="title is-3">Handheld Shear-Gripper Device</h2>
+      <p>
+        Some text here... 
+      </p>
+      <div style="text-align: center;">
+        <img src="./static/images/input_output.jpg" width="500"
+            class="interpolation-image"
+            alt=" "/>
+      </div>         
+    </div>
   </div>
 </section>
-
-
-
-
-
 
 <!-- Additional Results -->
 <section class="section">
   <div class="container is-max-desktop">
-      <!-- Results for FWD model  -->
+      <!-- Data Collection  -->
       <div class="content">
-        <h2 class="title is-3">Forward Model Predictions</h2>
+        <h2 class="title is-3">Pepper Harvesting Demonstration</h2>
           <div class="columns">
             <div class="column">
               <div class="dataset">
                 <video poster="" id="dataset" autoplay controls muted loop playsinline height="100%">
-                  <source src="./static/videos/single_tree.mp4" type="video/mp4">
+                  <source src="./static/videos/TODO.mp4" type="video/mp4">
                 </video>
                 
               </div>
               <p class="subtitle has-text-centered">
-                <span class="dnerf">Initial tree (brown), contact node and trajectory (pink), predicted tree deformation (red), ground-truth tree deformation (green).
+                <span class="dnerf">Some text here...
               </p>
               
             </div>
             <div class="column">
               <div class="contact-policy">
                 <video poster="" id="contact-policy" autoplay controls muted loop playsinline height="100%">
-                  <source src="./static/videos/multi_tree.mp4" type="video/mp4">
+                  <source src="./static/videos/TODO.mp4" type="video/mp4">
                 </video>
                 <p class="subtitle has-text-centered">
-                  <span class="dnerf">The forward model shown on varying tree structures and sizes. The forward model can generalize zero-shot to unseen tree sizes outside the training set.
+                  <span class="dnerf">Some text here...
                 </p>
                 
               </div>
@@ -300,75 +259,6 @@
       
   </div>
 </section>
-
-
-<!-- Additional Results -->
-<section class="section">
-  <div class="container is-max-desktop">
-      <!-- Results for FWD model  -->
-      <div class="content">
-        <h2 class="title is-3">Contact Policy Inferences</h2>
-
-          <div class="columns">
-            <div class="column">
-              <div class="dataset">
-                <video poster="" id="dataset" autoplay controls muted loop playsinline height="100%">
-                  <source src="./static/videos/robot_policy_new.mp4" type="video/mp4">
-                </video>
-                
-              </div>
-              <p class="subtitle has-text-centered">
-                <span class="dnerf"> Initial tree state (brown) and the desired target tree state (green). Given a set of candidate actions, we check feasibility and select the best action by iteratively applying RRT* to each candiate.  
-              </p>              
-            </div>
-            <div class="column">
-              <div class="contact-policy">
-                <video poster="" id="contact-policy" autoplay controls muted loop playsinline height="100%">
-                  <source src="./static/videos/robot_policy_multi.mp4" type="video/mp4">
-                </video>
-                <p class="subtitle has-text-centered">
-                  <span class="dnerf"> The contact policy used to manipulate the tree to a desired target state. The contact policy is shown on varying tree structures and sizes. 
-                </p>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-  </div>
-</section>
-
-
-<!-- <section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div class="columns">
-        <div class="column">
-          <div class="dataset">
-            <video poster="" id="dataset" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/trimmed_dataset.mp4" type="video/mp4">
-            </video>
-            <h2 class="subtitle has-text-centered">
-              <span class="dnerf"> Dataset collection process of the tree deformation in Issac Gym. 
-            </h2>
-          </div>
-        </div>
-        <div class="column">
-          <div class="contact-policy">
-            <video poster="" id="contact-policy" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/trimmed_contact.mp4" type="video/mp4">
-            </video>
-            <h2 class="subtitle has-text-centered">
-              <span class="dnerf"> Robot executing the learnt contact policy to move the tree into a target state. 
-            </h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
 
 <footer class="footer">
   <div class="container">
