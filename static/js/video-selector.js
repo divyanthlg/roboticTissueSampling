@@ -7,20 +7,20 @@ let currentVideoIndex = 0;
 
 const videos = {
     'occlusion': [
-        './static/assets/occlusion/small/GX010199_105_synchronized_small.mp4',
+        './static/assets/occlusion/small/GX010295_30_synchronized_small.mp4',
+        './static/assets/occlusion/small/GX010444_58_synchronized_small.mp4',
+        './static/assets/occlusion/small/GX010419_32_synchronized_small.mp4',
         './static/assets/occlusion/small/GX010264_0_synchronized_small.mp4',
+        './static/assets/occlusion/small/GX010199_105_synchronized_small.mp4',
         './static/assets/occlusion/small/GX010267_3_synchronized_small.mp4',
         './static/assets/occlusion/small/GX010274_10_synchronized_small.mp4',
-        './static/assets/occlusion/small/GX010295_30_synchronized_small.mp4',
-        './static/assets/occlusion/small/GX010419_32_synchronized_small.mp4',
-        './static/assets/occlusion/small/GX010444_58_synchronized_small.mp4',
         './static/assets/occlusion/small/GX010445_59_synchronized_small.mp4'
     ],
     'peduncle': [
-        './static/assets/peduncle/small/GX010174_80_synchronized_small.mp4',
         './static/assets/peduncle/small/GX010197_103_synchronized_small.mp4',
         './static/assets/peduncle/small/GX010264_0_synchronized_small.mp4',
         './static/assets/peduncle/small/GX010267_3_synchronized_small.mp4',
+        './static/assets/peduncle/small/GX010174_80_synchronized_small.mp4',
         './static/assets/peduncle/small/GX010306_41_synchronized_small.mp4',
         './static/assets/peduncle/small/GX010346_72_synchronized_small.mp4',
         './static/assets/peduncle/small/GX010365_91_synchronized_small.mp4'
@@ -34,16 +34,16 @@ const videos = {
         './static/assets/recovery_behavior/small/GX010418_31_synchronized_small.mp4'
     ],
     'lighting': [
+        './static/assets/lighting/small/GX010391_5_synchronized_small.mp4',
         './static/assets/lighting/small/GX010229_135_synchronized_small.mp4',
         './static/assets/lighting/small/GX010263_168_synchronized_small.mp4',
         './static/assets/lighting/small/GX010356_82_synchronized_small.mp4',
-        './static/assets/lighting/small/GX010391_5_synchronized_small.mp4'
     ],
     'multipepper': [
+        './static/assets/multipepper/small/GX010381_107_synchronized_small.mp4',
         './static/assets/multipepper/small/GX010229_135_synchronized_small.mp4',
         './static/assets/multipepper/small/GX010236_142_synchronized_small.mp4',
-        './static/assets/multipepper/small/GX010356_82_synchronized_small.mp4',
-        './static/assets/multipepper/small/GX010381_107_synchronized_small.mp4'
+        './static/assets/multipepper/small/GX010356_82_synchronized_small.mp4'
     ],
     'easy': [
         './static/assets/easy/small/GX010144_51_synchronized_small.mp4',
