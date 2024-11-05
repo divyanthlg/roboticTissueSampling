@@ -25,6 +25,8 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+
+  <link rel="stylesheet" href="./static/css/styles.css">
 </head>
 <body>
 
@@ -115,12 +117,14 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <div class="container">
+        <!--
         <div class="columns">
           <div class="column">
             <div class="contact-policy">
               <video poster="" id="contact-policy" autoplay controls muted loop playsinline height="100%">
                 <source src="./static/videos/trimmed_contact.mp4" type="video/mp4">
               </video>
+              <video muted="" autoplay="" playsinline="" loop="" src="./static/assets/main/GX010203_109_synchronized_small.mp4"></video>
               <h2 class="subtitle has-text-centered">
                 <span class="dnerf"> Robot executing a learnt contact policy to manipulate trees to the target state. 
               </h2>
@@ -128,15 +132,16 @@
           </div>
           <div class="column">
             <div class="dataset">
-              <video poster="" id="dataset" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/trimmed_dataset.mp4" type="video/mp4">
-              </video>
+              <video muted="" autoplay="" playsinline="" loop="" src="./static/assets/main/GX010264_0_synchronized_small.mp4"></video>
               <h2 class="subtitle has-text-centered">
                 <span class="dnerf"> Dataset collection process of tree deformation in Issac Gym. 
               </h2>
             </div>
           </div>
         </div>
+        -->
+        <video muted="" autoplay="" playsinline="" loop="" src="./static/assets/main/GX010203_109_synchronized_small.mp4"></video>
+        <video muted="" autoplay="" playsinline="" loop="" src="./static/assets/main/pepper_harvesting_4x4_small.mp4"></video>
       </div>
     </div>
   </div>
@@ -166,6 +171,7 @@
             for agriculture in natural settings.
           </p>
         </div>
+        <!--
         <img src="./static/images/titile_motivation.jpg"
         class="interpolation-image"
         alt=" "/>
@@ -173,12 +179,13 @@
         <h2 class="subtitle has-text-centered">
           <span class="dnerf"> Some text here... 
         </h2>
-    
+        -->
       </div>
     </div>
     <!--/ Abstract. -->
 
     <!-- Paper video. -->
+    <!--
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
@@ -188,6 +195,7 @@
         </div>
       </div>
     </div>
+    -->
     <!--/ Paper video. -->
   </div>
 </section>
@@ -212,15 +220,28 @@
     <!-- Videos  -->
     <div class="content">
       <h2 class="title is-3">Videos</h2>
-      <p>
-        Some text here... 
-      </p>
-      <div style="text-align: center;">
-        <img src="./static/images/input_output.jpg" width="500"
-            class="interpolation-image"
-            alt=" "/>
-      </div>         
+      <p>Select a video category to watch:</p>
+      
+      <div class="select-wrapper">
+        <select id="videoCategory">
+          <option value="recovery">Recovery</option>
+          <option value="occlusion">Occlusion</option>
+          <option value="peduncle">Peduncle</option>
+          <option value="lighting">Lighting</option>
+          <option value="multipepper">Multiple Peppers</option>
+          <option value="easy">Easy</option>
+        </select>
+      </div>
+    
+      <div class="video-container">
+        <video id="videoPlayer" muted autoplay playsinline loop></video>
+        <button id="prevVideo" class="nav-button nav-button-left"><span class="triangle"></span></button>
+        <button id="nextVideo" class="nav-button nav-button-right"><span class="triangle"></span></button>
+      </div>
     </div>
+
+
+
 
 
     <!-- Hardware  -->
@@ -334,5 +355,6 @@
   </div>
 </footer>
 
+  <script src="./static/js/video-selector.js"></script>
 </body>
 </html>
