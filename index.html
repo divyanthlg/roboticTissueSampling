@@ -160,21 +160,26 @@
             <!--h2 class="title is-3">Abstract</h2-->
             <div class="content has-text-justified">
               <p>
-                Automating tasks in outdoor agricultural fields
-                poses significant challenges due to environmental variability,
-                unstructured terrain, and diverse crop characteristics. We
-                present a robotic system for autonomous pepper harvesting
-                designed to operate in these unprotected, complex settings.
-                Utilizing a custom handheld shear-gripper, we collected 300
-                demonstrations to train a visuomotor policy, enabling the
-                system to adapt to varying field conditions and crop diversity.
-                We achieved a success rate of 28.95% with a cycle time of 31.71
-                seconds, comparable to existing systems tested under more
-                controlled conditions like greenhouses. Our system demon-
-                strates the feasibility and effectiveness of leveraging imitation
-                learning for automated harvesting in unstructured agricultural
-                environments. This work aims to advance scalable, automated
-                robotic solutions for agriculture in natural settings.
+                Manual tissue sampling for molecular-based pathogen detection in potato tubers remains a 
+                bottleneck due to its labor-intensive and physically demanding nature. To address this challenge, this study developed a dual-arm 
+                coordinated inline robotic system that integrates tuber grasping and tissue sampling mechanisms with a machine vision-guided 
+                control scheme to automate tissue sampling from potato tubers. 
+              </p>
+              <p>
+                Functionally, tubers get transported onto a conveyor system that 
+                halts when a YOLO11-based vision system identified a tuber entering the workspace of a one-prismatic (P)-degree-of-freedom (DoF) 
+                tuber grasping arm, equipped with a gripping end-effector. This arm securely grasped the tuber and positioned it for tissue sampling 
+                using the second robotic arm, a 3-P-DoF Cartesian manipulator with a biopsy punch-based end-effector. Using this system, tissue sampling 
+                was performed at a specific location on the tubers (eyes or stolon scars), detected and localized by YOLOv10-based vision system. 
+                The tissue-sampling operation followed a four-stage process: insertion of the end-effector into the tuber, rotation of the biopsy punch for 
+                tissue detachment from the tuber, biopsy punch extraction, and deposition of the tissue core onto designated collection location. 
+              </p>
+              <p>
+                Results showed an average positional error of 1.84 mm in reaching the sampling location along the tuber surface, and an average depth 
+                deviation of 1.79 mm from the intended 7.00 mm punching depth. The overall success rate for tissue core extraction and deposition 
+                onto the designated collection location was 81.5%, with an average sampling cycle time of 10.4 s. The total cost of the system components 
+                was under $1,900, demonstrating the system’s potential as a cost-effective alternative to labor-intensive manual tissue sampling. 
+                Future work will focus on optimizing the system for multi-site tissue sampling per tuber and broader testing in commercial settings.
               </p>
             </div>
             <!--
